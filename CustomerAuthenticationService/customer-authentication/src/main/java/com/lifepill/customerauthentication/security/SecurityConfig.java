@@ -14,15 +14,14 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    @SuppressWarnings({ "deprecation", "removal" })
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http
-                .cors().disable()
-                .authorizeRequests()
-                .anyRequest().authenticated()
-                .and()
-                .httpBasic();
+        // http
+        // .cors().disable()
+        // .authorizeRequests()
+        // .anyRequest().authenticated()
+        // .and()
+        // .httpBasic();
 
         return http.build();
     }
